@@ -19,7 +19,7 @@ class JobsController < ApplicationController
     if @job.save
       redirect_to @job
     else
-      render 'new'
+      render 'New'
     end
   end
 
@@ -34,7 +34,7 @@ class JobsController < ApplicationController
 
   private
 
-    def jobs_parms
+    def jobs_params
       params.require(:job).permit(:title, :description, :company, :url)
     end
 
