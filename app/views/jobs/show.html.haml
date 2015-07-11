@@ -2,6 +2,7 @@
 
 %p= @job.description
 %p= @job.company
+%p= @job.category_id
 
 = link_to "Home", root_path
 = link_to "Edit", edit_job_path(@job)
